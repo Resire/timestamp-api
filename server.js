@@ -14,6 +14,6 @@ app.get('/:time', (req, res) => {
   res.json(json);
 });
 
-app.listen(8080, function () {
+app.listen(process.env.PORT, function () {
   console.log('Example app listening on port 8080!')
 });
