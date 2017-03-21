@@ -15,8 +15,8 @@ app.get('/', function (req, res) {
       <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
     </ol>
     <h2>Example usage:</h2>
-    <p>https://timestamp-resire.herokuapp.com/December%2015,%202015</p>
-    <p>https://timestamp-resire.herokuapp.com/1450137600</p>
+    <p>https://enchanting-microwave.glitch.me//December%2015,%202015</p>
+    <p>https://enchanting-microwave.glitch.me//1450137600</p>
     <h2>Example output:</h2>
     <p>{ "unix": 1450137600, "natural": "December 15, 2015" }</p>
   `;
