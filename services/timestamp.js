@@ -7,17 +7,17 @@ function getJSON(reqTime) {
         "natural": null
     };
    
-    let time = new Date(reqTime);
+    const time = new Date(reqTime);
    
    
     if (time.toString() === 'Invalid Date') {
-        time.setTime(reqTime);
+        time.setTime(+reqTime * 1000);
     } 
    
     if (time.toString() !== 'Invalid Date') {
-        let options = {month: 'long', day: 'numeric', year: 'numeric'};
+        const options = {month: 'long', day: 'numeric', year: 'numeric'};
         
-        json.unix = +time;
+        json.unix = +time / 1000;
         json.natural = time.toLocaleDateString('en-US', options);
     }
     
